@@ -32,5 +32,6 @@ No issues with starvation, as every thread will eventually have a turn at the ou
 We tried as close as we could to implement a non blocking algorithm using AtomicIntegers, there are no issues with blocking until the outgates, where a deadlock can’t happen. 
  
  
-**How to Run:** javac *.java 
-java CarPark 
+**How to Run** 
+1. javac *.java 
+2. java CarPark 
