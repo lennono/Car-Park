@@ -17,7 +17,7 @@ The occupant thread has a for loop which imitates a driver looking for a space a
  
 The outgate is very straightforward, increase the AtomicIntegers for the spaces and wait for a small amount of time, sometimes longer for a mishap at the gate. Release the Semaphore once the driver is clear of the gate. 
  
-The monitor thread is running continuously, updating the monitor with the AtomicInteger for spaces. Any changes are picked up quickly. Only interacts with the monitor, would be the front end. 
+The monitor thread is running continuously(busy-wait), updating the monitor with the AtomicInteger for spaces. Any changes are picked up quickly. Only interacts with the monitor, would be the front end. 
  
 The Gate thread abstracts out the things that were common to both InGate and OutGate, like processing a driver at the gates and incrementing and decrementing the AtomicIntegers. 
  
