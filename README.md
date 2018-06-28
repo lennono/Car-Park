@@ -1,7 +1,7 @@
 # Car-Park
 
 ## Description 
-Our imagined car park is much like the DCU multi-story car park, with the in gates beside one another and the out gates beside one another. No idea of a users before the ingates. There is only 1 queue for the gates with user at the front of the queue going through the free gate. Users may have issues at the gates holding up that gate. 
+The imagined car park is much like the DCU multi-story car park, with the in gates beside one another and the out gates beside one another. No idea of a users before the ingates. There is only 1 queue for the gates with user at the front of the queue going through the free gate. Users may have issues at the gates holding up that gate. 
  
 In gates create occupants, which are occupants of the car park. In gates after incrementing the count for the monitor and after creating an occupant, sleep for a period of time, imitating a gate waiting for a new user to activate the gate. Occupants who have passed the gate look for a space in the car park. If a spot is unavailable they the user tries to look for a spot in the car park again, up to 4 times. If a spot was available the user parks and goes about their business. 
  
