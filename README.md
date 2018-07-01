@@ -29,7 +29,7 @@ The program mostly relies on AtomicIntegers, which means the threads need not wa
 No issues with starvation, as every thread will eventually have a turn at the outgates and the other threads need not wait on one another. 
  
 ## Prevention 
-We tried as close as we could to implement a non blocking algorithm using AtomicIntegers, there are no issues with blocking until the outgates, where a deadlock can’t happen. 
+I tried as close as we could to implement a non blocking algorithm using AtomicIntegers, there are no issues with blocking until the outgates, where a deadlock can’t happen. 
  
  
 **How to Run** 
